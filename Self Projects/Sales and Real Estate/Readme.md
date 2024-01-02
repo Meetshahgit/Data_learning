@@ -31,3 +31,6 @@ To narrow down his options, Mandy is specifying his ideal property features. By 
 
 ## Conclusion:
 Through thorough research and analysis, Mandy can make informed decisions about investing in luxury real estate in Canada. By addressing his specific questions, he can streamline the property search process and identify opportunities that align with his lifestyle and investment objectives.
+
+Data Set link:
+https://www.kaggle.com/datasets/reenapinto/housing-price-and-real-estate-2023
