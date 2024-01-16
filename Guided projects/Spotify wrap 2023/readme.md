@@ -25,4 +25,8 @@ Identify correlations between playlist engagement and the predominant genre.
 _Listener Demographics:_ Explore Spotify's analytics to understand the demographics of listeners engaging with Alex's playlists.
 Identify geographic locations and age groups that show a high affinity for the most streamed genre.
 
+#### Links:
 
+_**youtube link:**_ https://www.youtube.com/watch?v=ZSrVOyKAC4Y&list=PLWZGieZivPKKgm9d15shB1UNZhQ0tiLWu&index=1
+
+_**Dataset link:**_ https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023?resource=download
