@@ -1,0 +1,40 @@
+https://www.youtube.com/watch?v=aXNhtcQ4nEU
+
+DateMaster = CALENDAR(FIRSTDATE(Bank_Churn[BANK DOJ]),LASTDATE[Bank DOJ]))
+
+year = YEAR(DateMaster[Date])
+
+Month = MONTH(DateMaster[Date])
+
+Month Name = FORMAT(DateMaster[Date],"MMM")
+
+Active_Customers =  CALCULATE(count(Bank_Churn[CustomerId]),ActiveCustomer[ActiveCategory]="Active Member")
+
+Active Member
+
+Total_Customer = COUNT(Bank_Churn[CustomerId])
+
+Inactive_Customer = [Total_Customer] - [Active_Customer]
+
+Credit_Card_Holder = CALCULATE(COUNT(Bank_Churn[CustomerId]),CreditCard[Category]="credit card holder")
+Non_Credit_Card_Holder = CALCULATE(COUNT(Bank_Churn[CustomerId]),CreditCard[Category]="non credit card holder")
+Exit_Customer = CALCULATE([Total_Customer,ExitCustomer[ExitCategory]="Exit")
+Retail_Customer=CALCULATE([Total_Customer],ExitCustomer[ExitCategory]="Retail")
+
+credit_type = SWITCH(true(), Bank_Churn[CreditScore]>=800 && Bank_Churn[CreditScore]<=850,"Excellent",
+Bank_Churn[CreditScore]>=740 && Bank_Churn[CreditScore]<=799,"very good",
+Bank_Churn[CreditScore]>=670 && Bank_Churn[CreditScore]<=739,"good",
+Bank_Churn[CreditScore]>=580 && Bank_Churn[CreditScore]<=669,"Fair",
+Bank_Churn[CreditScore]>=300 && Bank_Churn[CreditScore]<=579,"Fair")
+
+previous_month_exit_customer = CALCULATE([Exit_Customer]),PREVIOUSMONTH(DateMaster[Date])
+
+Churn % =
+var EC = [Exit_Customer]
+var TC = [Total_Customer]
+var churnper = DIVIDE(EC,TC)
+return churnper
+
+Conditional Formatting, Selection, Bookmark, AI based feature
+.............................................................................1st hour
+RLS (Row level security) , Publish of workspace, Install gateway, subscribe to email
