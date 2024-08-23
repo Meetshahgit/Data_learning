@@ -1,6 +1,7 @@
-Business Requirement Document
+# Business Requirement Document #
 
-Data Dictionary
+## * Data Dictionary * ##
+
 •	RowNumber—corresponds to the record (row) number and has no effect on the output.
 •	CustomerId—contains random values and has no effect on customer leaving the bank.
 •	Surname—the surname of a customer has no impact on their decision to leave the bank.
