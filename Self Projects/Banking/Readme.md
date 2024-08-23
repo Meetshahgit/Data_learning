@@ -32,32 +32,35 @@
 **NumOfProducts**—refers to the number of products that a customer has purchased through the bank. 
 
 **HasCrCard**—denotes whether or not a customer has a credit card. This column is also relevant, since people with a credit card are less likely to leave the bank.
-	1 represents credit card holder
-	0 represents non credit card holder
+
+1 represents credit card holder
+0 represents non credit card holder
 
 **IsActiveMember**—active customers are less likely to leave the bank.
-	1 represents Active Member
-	0 represents Inactive Member
+
+1 represents Active Member
+0 represents Inactive Member
 
 **Estimated Salary**—as with balance, people with lower salaries are more likely to leave the bank compared to those with higher salaries.
 
 **Exited**—whether or not the customer left the bank.
 
-  0 represents Retain 
-  1 represents Exit
+0 represents Retain 
+1 represents Exit
 
 **Bank DOJ** — date when the Customer associated/joined  with the bank.
 
 ## Data Gathering:
 
 **_Please use the following data assets to pull the data related to Bank customer and associated details._**
-    ActiveCustomer 
-    Bank_Churn
-    CreditCard
-    CustomerInfo
-    ExitCustomer
-    Gender
-    Geography
+   
+     ActiveCustomer 
+     Bank_Churn
+     CreditCard
+     CustomerInfo
+     ExitCustomer
+     Gender
+     Geography
 
 ## Churn Analysis:
 Analyse the data and bring out few insights on the customer Churn.
